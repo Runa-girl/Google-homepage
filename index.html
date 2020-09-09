@@ -11,31 +11,30 @@
                 font-family: roboto, sans serif;
                 color: #595959;
             }
-            h1 {
-                font-size: 12px;
-            }
             nav {
                 Padding: 1 em;
                 display: flex;
                 justify-content: flex-end;
+                align-self: flex-start;
             }
             a {
                 color: #595959;
             }
             .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                align-self: center;
             }
              {
                 justify-content: center;
             }
-            footer {
+            .total {
                 display: flex;
+                flex-direction: column;
+            }
+            footer {
+                align-self: flex-end;
             }
         </style>
-        <div>
+        <div class="total">
             <header>
                 <br>
                 <nav>
@@ -64,7 +63,7 @@
                 <h1>Nederland</h1>
                 <hr>
                 <div>
-                    <div>
+                    <div >
                         <a href="#">Adverteren</a>
                         <a href="#">Bedrijf</a>
                         <a href="#">Over</a>
