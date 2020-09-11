@@ -7,7 +7,22 @@
     </head>
     <body>
         <style>
- 
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+        }
         </style>
         <div class="total">
 
@@ -18,8 +33,10 @@
                 <form class="search-box">
                     <input type="text" placeholder="">
                     <br> <br>
-                    <button type="submit">Google zoeken</button>
-                    <button type="submit">Ik doe een gok</button>
+                    <div class="buttons">
+                        <button type="submit">Google zoeken</button>
+                        <button type="submit">Ik doe een gok</button>
+                    </div>
                 </form>
                 <br>
                 <p>Google aangeboden in: <a href="#">Frysk</a></p>
