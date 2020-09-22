@@ -12,6 +12,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-family: Arial, sans-serif;
+            color: #595959;
         }
         .search-box {
             display: flex;
@@ -41,30 +43,36 @@
         input[type=text]:focus {
             outline: none;
         }
+        .button {
+            padding: 0px 16px 0px 16px;
+            border: 1px;
+            margin: 11px 4px 11px 4px;
+            height: 36px;
+            border-radius: 4px;
+            color: #595959;
+        }
         </style>
         <div class="total">
 
             <main>
                 <div class="content">
-                    <div id="logo">
-                        <img alt="google logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width: 300px;">
-                    </div>
+                    <img alt="google logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width: 300px;">
                     <br>
-                <form class="search-box">
-                    <div class="search-field">
-                        <img alt="magnifying glass" class="glass" style="justify-self: start;" src="/pngfind.com-searchicon-png-1092764.png">
-                        <div class="invisible-field">
-                            <input type="text" placeholder="" style="width: 400px; border-style: none;">
+                    <form class="search-box">
+                        <div class="search-field">
+                            <img alt="magnifying glass" class="glass" style="justify-self: start;" src="/pngfind.com-searchicon-png-1092764.png">
+                            <div class="invisible-field">
+                                <input type="text" placeholder="" style="width: 400px; border-style: none;">
+                            </div>
                         </div>
-                    </div>
-                    <br> <br>
-                    <div class="buttons">
-                        <button type="submit">Google zoeken</button>
-                        <button type="submit">Ik doe een gok</button>
-                    </div>
-                </form>
-                <br>
-                <p>Google aangeboden in: <a href="#">Frysk</a></p>
+                        <br> <br>
+                        <div class="buttons">
+                            <button class="button" type="submit">Google zoeken</button>
+                            <button class="button" type="submit">Ik doe een gok</button>
+                        </div>
+                    </form>
+                    <br>
+                    <p style="font-size: 12px;">Google aangeboden in: <a href="#">Frysk</a></p>
                 </div>
             </main>
 
