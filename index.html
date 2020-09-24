@@ -10,11 +10,10 @@
             nav {
                 display: flex;
                 flex-direction: row-reverse;
-                font-family: Arial, sans-serif;
+                font-family: Roboto, sans-serif;
                 color: #595959;
             }
             .navbar {
-                
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -26,13 +25,20 @@
                 font-size: 12px;
                 padding-right: 16px;
                 color: #595959;
+                text-decoration: none;
+            }
+            .content-position {
+                position: fixed;
+                top: 20%;
+                left: 50%;
+                right: 50%;
             }
             .content {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                font-family: Arial, sans-serif;
+                font-family: Roboto, sans-serif;
                 color: #595959;
             }
             .search-box {
@@ -71,16 +77,40 @@
                 border-radius: 4px;
                 color: #595959;
             }
-            .total {
-                display: flex;
-                flex-direction: column;
-                align-items: space-between;
-            }
             .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                font-family: Arial, sans-serif;
+                font-size: 15px;
+                color: #595959;
                 background-color: #f2f2f2;
                 border-style: solid;
                 border-width: 1px 0px 0px 0px;
                 border-color: #e4e4e4;
+                padding: 12px 0px 0px 30px;
+            }
+            .footer-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-style: solid;
+                border-width: 1px 0px 0px 0px;
+                border-color: #e4e4e4;
+                font-size: 14px;
+            }
+            .fn-left {
+                padding: 13px 0px 13px 0px;
+                
+            }
+            .fn-right {
+                padding: 13px 0px 13px 0px;
+                margin-right: 30px;
+            }
+            .footer-item {
+                color: #595959;
+                padding-right: 16px;
+                text-decoration: none;
             }
         </style>
         <div class="total">
@@ -95,36 +125,44 @@
                 </div>
             </nav>
             <main>
-                <div class="content">
-                    <img alt="google logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width: 300px;">
-                    <br>
-                    <form class="search-box">
-                        <div class="search-field">
-                            <img alt="magnifying glass" class="glass" style="justify-self: start;" src="/pngfind.com-searchicon-png-1092764.png">
-                            <div class="invisible-field">
-                                <input type="text" placeholder="" style="width: 400px; border-style: none;">
+                <div class="content-position">
+                    <div class="content">
+                        <img alt="google logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width: 300px;">
+                        <br>
+                        <form class="search-box">
+                            <div class="search-field">
+                                <img alt="magnifying glass" class="glass" style="justify-self: start;" src="/pngfind.com-searchicon-png-1092764.png">
+                                <div class="invisible-field">
+                                    <input type="text" placeholder="" style="width: 400px; border-style: none;">
+                                </div>
                             </div>
-                        </div>
-                        <br> <br>
-                        <div class="buttons">
-                            <button class="button" type="submit">Google zoeken</button>
-                            <button class="button" type="submit">Ik doe een gok</button>
-                        </div>
-                    </form>
-                    <br>
-                    <p style="font-size: 12px;">Google aangeboden in: <a href="#">Frysk</a></p>
+                            <br> <br>
+                            <div class="buttons">
+                                <button class="button" type="submit">Google zoeken</button>
+                                <button class="button" type="submit">Ik doe een gok</button>
+                            </div>
+                        </form>
+                        <br>
+                        <p style="font-size: 12px; width: 158px;">Google aangeboden in: <a href="#" style="text-decoration: none;">Frysk</a></p>
+                    </div>
                 </div>
             </main>
             <footer class="footer">
-                <p>Nederland</p>
-                <a href="#">Adverteren</a>
-                <a href="#">Bedrijf</a>
-                <a href="#">Over</a>
-                <a href="#">Hoe Google Zoeken werkt</a>
-                <a href="#">Privacy</a>
-                <a href="#">Voorwaarden</a>
-                <a href="#">Instellingen</a>
-            </footer>
+                <p style="padding-bottom: 13px;">Nederland</p>
+                <div class="footer-nav">
+                    <div class="fn-left">
+                        <a class="footer-item" href="#">Adverteren</a>
+                        <a class="footer-item" href="#">Bedrijf</a>
+                        <a class="footer-item" href="#">Over</a>
+                        <a class="footer-item" href="#">Hoe Google Zoeken werkt</a>
+                    </div>
+                    <div class="fn-right">
+                        <a class="footer-item" href="#">Privacy</a>
+                        <a class="footer-item" href="#">Voorwaarden</a>
+                        <a class="footer-item" href="#" style="padding-right: 30px;">Instellingen</a>
+                    </div>
+                    </div>
+                </footer>
         </div>
     </body>
 </html>
